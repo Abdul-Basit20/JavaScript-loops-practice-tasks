@@ -93,7 +93,7 @@ do {
   } else if (choise === 2) {
     let payment = Number(prompt(`Enter deposit amount:`));
     alert(
-      `Your ${payment} is Added\nNow your current balance is ${(payment += balance)}`,
+      `Your ${payment} is Added\nNow your current balance is ${(balance += payment)}`,
     );
   } else if (choise === 3) {
     let payment = Number(prompt(`Enter withdraw amount:`));
