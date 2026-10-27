@@ -99,7 +99,7 @@ do {
     let payment = Number(prompt(`Enter withdraw amount:`));
     if (payment <= balance) {
       alert(
-        `Your ${payment} is withdraw successfully\nNow your current balance is: ${(payment -= balance)}`,
+        `Your ${payment} is withdraw successfully\nNow your current balance is: ${balance - payment}`,
       );
     } else {
       alert(`Insufficient Balance!`);
